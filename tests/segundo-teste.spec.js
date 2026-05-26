@@ -1,6 +1,6 @@
 const {test, expect} = require('@playwright/test');
 
-test('deve acessar a tela de login', async ({page}) => {
+test('[101-B6] [login, negative] deve acessar a tela de login', async ({page}) => {
     await page.goto('https://automationexercise.com/');
 
     await page.getByRole('link', {name: 'Signup / Login'}).click();
